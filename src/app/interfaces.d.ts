@@ -3,7 +3,7 @@
 export interface ICurrentWeather {
   city:    string
   country: string
-  date:    Date
+  date:    number | Date
   image: string
   temperature: number
   description: string
@@ -50,7 +50,7 @@ export interface Wind {
 }
 
 // Response
-export interface ICurrentWeatherRes  {
+export interface ICurrentWeatherData  {
   coord:      Coord;
   weather:    Weather[];
   base:       string;
